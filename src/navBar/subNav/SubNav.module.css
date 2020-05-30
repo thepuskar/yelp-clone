@@ -1,0 +1,23 @@
+.sub-nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+:global(.button).subNab-btn {
+  border-radius: 0px;
+  border-bottom: 0px;
+  border-top: 0px;
+  height: 2.2rem;
+}
+
+:global(.button).omit-right-border {
+  border-right: none;
+}
+:global(.button).right-border {
+  border-right: 1px solid #dbdbdb;
+}
