@@ -6,8 +6,9 @@ export function TopNav() {
   return (
     <div className={styles["top-nav"]}>
       <div className={styles.left}>
-        <span>Review</span>
+        <span>Write a Review</span>
         <span>Events</span>
+        <span>Talk</span>
       </div>
       <div className={styles.right}>
         <span>Login</span>

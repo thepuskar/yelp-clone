@@ -5,7 +5,8 @@ import logo from "../assets/logo.png";
 import { TopNav } from "./TopNav/TopNav";
 
 import styles from "./LandingPage.module.css";
-import { SearchBar } from "./searchBar/SearchBar";
+import { SearchBar } from "./SearchBar/SearchBar";
+import { SearchSuggestion } from "./SearchSuggestion/SearchSuggestion";
 
 export function LandingPage() {
   return (
@@ -13,6 +14,7 @@ export function LandingPage() {
       <TopNav />
       <img src={logo} alt="logo" className={styles.logo} />
       <SearchBar />
+      <SearchSuggestion />
     </di>
   );
 }

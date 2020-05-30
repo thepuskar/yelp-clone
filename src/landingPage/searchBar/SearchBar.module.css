@@ -4,9 +4,9 @@
 
 :global(.button).search-btn {
     background-color: #bd1f1f;
-    border: none; 
+    border: none;
 }
 
-:global(.icon) {
+:global(.icon).search-icon {
     color: #ffffff;
 }
