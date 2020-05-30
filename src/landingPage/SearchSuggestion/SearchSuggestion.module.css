@@ -1,9 +1,15 @@
 .suggestions {
     display: flex;
+    padding: 1rem;
 }
 
 .suggestions-item {
     font-size: 0.75rem;
     margin-left: 4px;
     margin-right: 2.5rem;
+}
+
+.landing {
+    display: flex;
+    justify-content: center;
 }
