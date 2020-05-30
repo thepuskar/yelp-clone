@@ -6,13 +6,13 @@ export function TopNav() {
   return (
     <div className={styles["top-nav"]}>
       <div className={styles.left}>
-        <span>Write a Review</span>
-        <span>Events</span>
-        <span>Talk</span>
+        <span className={styles["nav-link"]}>Write a Review</span>
+        <span className={styles["nav-link"]}>Events</span>
+        <span className={styles["nav-link"]}>Talk</span>
       </div>
       <div className={styles.right}>
-        <span>Login</span>
-        <button className="button">Sign Up</button>
+        <span className={styles["nav-link"]}>Login</span>
+        <button className={`button ${styles["signup-btn"]}`}>Sign Up</button>
       </div>
     </div>
   );

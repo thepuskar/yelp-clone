@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: var(--element-spacing);
+    margin: 1.5rem 9rem;
 }
 
 .left>* {
@@ -20,4 +20,19 @@
 
 .right>* {
     margin-left: var(--element-spacing);
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid #000;
+}
+
+.signup-btn {
+    font-size: 16px;
+    font-weight: 500;
 }
