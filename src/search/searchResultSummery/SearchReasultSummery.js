@@ -2,12 +2,12 @@ import React from "react";
 
 import styles from "./SearchResultSummery.module.css";
 
-export function SearchResultSummery() {
+export function SearchResultSummery(props) {
   return (
     <div className={styles["container"]}>
       <div className={styles["search-summery"]}>
         <h2 className="subtitle">
-          <strong>Burgers</strong> in Berlin
+          <strong>{props.term}</strong> in {props.location}
         </h2>
         <p>Showing 1-20 out of 284 results</p>
       </div>

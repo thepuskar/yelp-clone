@@ -25,6 +25,7 @@ export function SearchBar(props) {
             onChange={(e) => {
               setTerm(e.target.value);
             }}
+            value={term}
             className={`input ${sizeClass} ${styles["input-control"]}`}
             type="text"
             placeholder="burgers, barbers, spas, handymen"
@@ -38,6 +39,7 @@ export function SearchBar(props) {
             onChange={(e) => {
               setLocation(e.target.value);
             }}
+            value={location}
             className={`input ${sizeClass} ${styles["input-control"]}`}
             type="text"
             placeholder="where"
