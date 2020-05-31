@@ -3,7 +3,7 @@ import Rating from "react-rating";
 
 import styles from "./ItemRating.module.css";
 
-export function ItemRating() {
+export function ItemRating(props) {
   return (
     <div className={styles["rating"]}>
       <Rating
@@ -11,9 +11,9 @@ export function ItemRating() {
         fullSymbol="fas fa-star"
         fractions={2}
         readonly
-        initialRating={3}
+        initialRating={props.rating}
       />
-      <p>154 Reviews</p>
+      <p>{props.reviewCount} Reviews</p>
     </div>
   );
 }
