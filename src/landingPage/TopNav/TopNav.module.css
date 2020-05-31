@@ -1,38 +1,39 @@
 :root {
-    --element-spacing: 1.5rem
+  --element-spacing: 1.5rem;
 }
 
 .top-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1.5rem 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 9rem;
 }
 
-.left>* {
-    margin-right: var(--element-spacing);
+.left > * {
+  margin-right: var(--element-spacing);
 }
 
 .right {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.right>* {
-    margin-left: var(--element-spacing);
+.right > * {
+  margin-left: var(--element-spacing);
 }
 
 .nav-link {
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .nav-link:hover {
-    border-bottom: 1px solid #000;
+  border-bottom: 1px solid #fff;
 }
 
 .signup-btn {
-    font-size: 16px;
-    font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
 }

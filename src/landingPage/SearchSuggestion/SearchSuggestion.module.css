@@ -1,21 +1,25 @@
 .suggestions {
-    display: flex;
-    padding: 1rem;
+  display: flex;
+  padding: 1rem;
 }
 
 .suggestions-item {
-    font-size: 0.75rem;
-    font-weight: 700;
-    margin-left: 5px;
-    margin-right: 2.5rem;
-    cursor: pointer;
+  font-size: 0.75rem;
+  color: #fff;
+  font-weight: 700;
+  margin-left: 5px;
+  margin-right: 2.5rem;
+  cursor: pointer;
 }
 
 .suggestions-item:hover {
-    border-bottom: 1px solid #000;
+  border-bottom: 1px solid #fff;
 }
 
 .landing {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  color: #fff;
 }
