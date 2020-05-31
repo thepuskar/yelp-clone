@@ -3,7 +3,7 @@ import * as api from "./api";
 
 export function useBusinessSearch(term, location) {
   const [businesses, setBusinesses] = useState([]);
-  const [amountResult, setAmountResult] = useState();
+  const [amountResults, setAmountResults] = useState();
   const [searchParams, setSearchParams] = useState({ term, location });
 
   useEffect(() => {
@@ -13,12 +13,12 @@ export function useBusinessSearch(term, location) {
         const rawData = await api.get("/businesses/search", searchParams);
         const resp = await rawData.json();
         setBusinesses(resp.businesses);
-        setAmountResult(resp.total);
+        setAmountResults(resp.total);
       } catch (e) {
         console.error(e);
       }
     };
     fetchData();
   }, [searchParams]);
-  return [businesses, amountResult, searchParams, setSearchParams];
+  return [businesses, amountResults, searchParams, setSearchParams];
 }
