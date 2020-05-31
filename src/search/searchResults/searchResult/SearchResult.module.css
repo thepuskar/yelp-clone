@@ -12,7 +12,9 @@
 }
 .item-info {
   min-width: 400px;
-  /* width: 100%; */
+}
+:global(.tag).item-tags {
+  margin-right: 7px;
 }
 .contact-info p {
   font-size: 0.85rem;

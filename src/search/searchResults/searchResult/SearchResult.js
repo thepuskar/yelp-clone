@@ -11,6 +11,16 @@ export function SearchResult(props) {
     return <div></div>;
   }
 
+  const tags = b.categories.map((category) => (
+    <span className={`tag ${styles["item-tags"]}`} key={b.id + category.title}>
+      {category.title}
+    </span>
+  ));
+
+  const addressLines = b.location.display_address.map((addressLine) => (
+    <p key={b.id + addressLine}>{addressLine}</p>
+  ));
+
   return (
     <div className={styles["search-result"]}>
       <img
@@ -22,14 +32,12 @@ export function SearchResult(props) {
         <h2 className="subtitle">{b.name}</h2>
         <ItemRating reviewCount={b.review_count} rating={b.rating} />
         <p>
-          $$ <span className="tag">Burgers</span>&nbsp;
-          <span className="tag">fast food</span>
+          {b.price} {tags}
         </p>
       </div>
       <div className={styles["contact-info"]}>
-        <p>0123456789</p>
-        <p>Example Street 5</p>
-        <p>124875 Kathmandu</p>
+        <p>{b.phone}</p>
+        {addressLines}
       </div>
     </div>
   );
