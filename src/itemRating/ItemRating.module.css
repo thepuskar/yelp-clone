@@ -1,0 +1,10 @@
+.rating {
+  display: flex;
+  align-items: center;
+}
+.rating > * {
+  margin-right: 6px;
+}
+.rating p {
+  font-size: 0.85rem;
+}

@@ -10,7 +10,10 @@ export function NavBar() {
   return (
     <div>
       <div className={styles["navBar"]}>
-        <img src={logo} alt="logo" className={styles.logo} />
+        <a href="/">
+          <img src={logo} alt="logo" className={styles.logo} />
+        </a>
+
         <SearchBar small />
         <button className={`button ${styles["nav-button"]}`}>Sign In</button>
         <button className={`button ${styles["nav-button"]}`}>Sign Up</button>

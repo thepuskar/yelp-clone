@@ -1,0 +1,19 @@
+.search-result {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.item-img {
+  width: 210px;
+  height: 210px;
+  border-radius: 4px;
+  margin-right: 1rem;
+}
+.item-info {
+  min-width: 400px;
+  /* width: 100%; */
+}
+.contact-info p {
+  font-size: 0.85rem;
+}
