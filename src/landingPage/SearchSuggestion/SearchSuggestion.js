@@ -6,9 +6,9 @@ export function SearchSuggestion() {
   return (
     <div className={styles.suggestions}>
       <span className="icon is-small">
-        <i className={`fas fa-calculator ${styles["icon"]}`}></i>
+        <i className={`fas fa-concierge-bell ${styles["icon"]}`}></i>
       </span>
-      <span className={styles["suggestions-item"]}>Accountants</span>
+      <span className={styles["suggestions-item"]}>Saloon</span>
 
       <span className="icon is-small">
         <i className={`fas fa-utensils ${styles["icon"]}`}></i>
@@ -16,9 +16,9 @@ export function SearchSuggestion() {
       <span className={styles["suggestions-item"]}> Restaurants</span>
 
       <span className="icon is-small">
-        <i className={`fas fa-home ${styles["icon"]}`}></i>
+        <i className={`fas fa-car ${styles["icon"]}`}></i>
       </span>
-      <span className={styles["suggestions-item"]}>Home Services</span>
+      <span className={styles["suggestions-item"]}>Automobile</span>
 
       <span className="icon is-small">
         <i className={`fas fa-truck ${styles["icon"]}`}></i>

@@ -1,9 +1,9 @@
 .input-control {
-    min-width: 320px;
+    min-width: 50px;
 }
 
 :global(.button).search-btn {
-    background-color: #bd1f1f;
+    background-color:#1f32dd ;
     border: none;
 }
 
