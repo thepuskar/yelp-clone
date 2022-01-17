@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1.5rem 9rem;
+  margin: var(--element-spacing);
 }
 
 .left > * {
@@ -22,18 +22,8 @@
   margin-left: var(--element-spacing);
 }
 
-.nav-link {
-  font-size: 16px;
-  color: #fff;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.nav-link:hover {
-  border-bottom: 1px solid #fff;
-}
-
-.signup-btn {
-  font-size: 16px;
-  font-weight: 500;
+:global(.button).search-button {
+  margin: var(--element-spacing);
+  background:#126d97;
+  color: white;
 }

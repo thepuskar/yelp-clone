@@ -18,7 +18,7 @@ export function SearchBar(props) {
     <form onSubmit={submit}>
       <div className="field has-addons">
         <div className="control">
-          <div className={`button is-static ${sizeClass}`}>FIND</div>
+          <div className={`button is-static ${sizeClass}`}>Search</div>
         </div>
         <p className="control">
           <input
@@ -28,7 +28,7 @@ export function SearchBar(props) {
             value={term}
             className={`input ${sizeClass} ${styles["input-control"]}`}
             type="text"
-            placeholder="burgers, barbers, spas, handymen"
+            placeholder="mechanic, handyman, capenter"
           />
         </p>
         <div className="control">
